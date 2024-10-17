@@ -11,8 +11,6 @@ class Banco:
             self.saldo += valor
             self.extrato.append(f"Depósito: R$ {valor:.2f}")
             print(f"Depósito de R$ {valor:.2f} realizado com sucesso.")
-        else:
-            print("Valor inválido para depósito.")
 
     def sacar(self, valor):
         if self.saques_realizados >= self.limite_saques:
